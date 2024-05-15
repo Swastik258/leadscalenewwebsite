@@ -1,90 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Leadscale</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Document</title>
+    <style>
+        /* Custom styles */
+        /* Navbar animations */
+        .navbar {
+            transition: background-color 0.3s, padding 0.3s;
+        }
+
+        /* Apply Now Section animations */
+        .apply-section {
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        /* Animation for Apply Now Section */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Hamburger menu styles */
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+
+        /* Mobile menu styles */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile-menu a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        /* Desktop menu styles */
+        @media (min-width: 768px) {
+            .hamburger {
+                display: none;
+            }
+        }
+    </style>
 </head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="navbar bg-black fixed top-0 w-full z-50">
+        <div class="container mx-auto py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Leadscale</a>
+            <div class="hamburger md:hidden">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="mobile-menu md:hidden">
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">Courses</a>
+                <a href="#" class="text-white">Apply</a>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+            <ul id="desktop-menu" class="hidden md:flex space-x-4">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Courses</a></li>
+                <li><a href="#" class="text-white">Apply</a></li>
+                <li><a href="#" class="text-white">About</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<body>
-    <!--
-// v0 by Vercel.
-// https://v0.dev/t/RsaMbxkduDt
--->
+    <!-- Apply Now Section -->
+    <section class="container mx-auto py-16 apply-section md:mt-32">
+        <div class="max-w-lg mx-auto bg-white shadow-md rounded-lg overflow-hidden animated">
+            <div class="py-6 px-8 bg-gray-800 text-white text-xl font-semibold">Apply Now</div>
+            <div class="py-6 px-8">
+                <div data-tf-live="01HXY7FV9VT5MNMR2GX8ZE2TYA"></div>
+                <script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </section>
 
-    <section class="w-full py-8 md:py-12 lg:py-16 bg-gradient-to-r from-purple-600 to-indigo-600">
-        <div class="container px-4 md:px-6">
-            <div class="grid gap-4 lg:grid-cols-[1fr_400px] lg:gap-8 xl:grid-cols-[1fr_500px]">
-                <img src="https://via.placeholder.com/200x112" width="200" height="112" alt="Campus Ambassador"
-                    class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last" />
-                <div class="flex flex-col justify-center space-y-4">
-                    <div class="space-y-2">
-                        <h1 class="text-2xl font-bold tracking-tighter text-white sm:text-3xl xl:text-4xl/none">
-                            Become a Campus Ambassador
-                        </h1>
-                        <p class="max-w-[500px] text-gray-200 md:text-lg">
-                            Join our team and help us empower students with the best educational resources and tools.
-                        </p>
-                    </div>
-                    <div class="flex flex-col gap-2 min-[400px]:flex-row">
-                        <a class="inline-flex h-9 items-center justify-center rounded-md bg-white px-6 text-sm font-medium text-purple-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                            href="#">
-                            Apply Now
-                        </a>
-                        <a class="inline-flex h-9 items-center justify-center rounded-md bg-purple-600 px-6 text-sm font-medium text-white shadow transition-colors hover:bg-indigo-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                            href="#">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto text-center text-white">
+            <p>&copy; 2024 Leadscale. All rights reserved.</p>
         </div>
-    </section>
-    <section class="w-full py-8 md:py-12 lg:py-16">
-        <div class="container px-4 md:px-6">
-            <div class="grid gap-4 lg:grid-cols-2 lg:gap-8">
-                <div class="space-y-2">
-                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-                        Free Benefits for Campus Ambassadors
-                    </h2>
-                    <p class="max-w-[500px] text-gray-500 md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed dark:text-gray-400">
-                        As a campus ambassador, you'll have access to a wide range of educational resources and tools
-                        to help you succeed.
-                    </p>
-                </div>
-                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-                    <!-- Your grid items with benefits -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="w-full py-8 md:py-12 lg:py-16 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
-        <div class="container px-4 md:px-6">
-            <div class="grid gap-4 lg:grid-cols-2 lg:gap-8">
-                <div class="space-y-2">
-                    <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-                        Become a Campus Ambassador Today
-                    </h2>
-                    <p class="max-w-[500px] text-gray-200 md:text-lg">
-                        Join our team and help us empower students with the best educational resources and tools.
-                        Apply now and take the first step towards an exciting opportunity.
-                    </p>
-                </div>
-                <div class="flex flex-col gap-2 min-[400px]:flex-row justify-end">
-                    <a class="inline-flex h-9 items-center justify-center rounded-md bg-white px-6 text-sm font-medium text-purple-600 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                        href="#">
-                        Apply Now
-                    </a>
-                    <a class="inline-flex h-9 items-center justify-center rounded-md border border-white bg-transparent px-6 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                        href="#">
-                        Learn More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Add JavaScript for animations
+        window.addEventListener('scroll', function () {
+            var applySection = document.querySelector('.apply-section');
+            var applySectionPosition = applySection.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.5;
+            if (applySectionPosition < screenPosition) {
+                applySection.classList.add('animate-fade-in-up');
+            }
+        });
+    </script>
 </body>
-
 </html>
