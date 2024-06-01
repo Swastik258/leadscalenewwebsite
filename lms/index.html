@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic LMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginPage" class="h-screen flex items-center justify-center bg-gray-100">
+        <div class="w-full max-w-md">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="loginForm">
+                <h2 class="text-center text-2xl font-bold mb-4">Login</h2>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Username
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Password
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="course">
+                        Course Name
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course" type="text" placeholder="Course Name">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="login()">
+                        Sign In
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="dashboardPage" class="hidden h-screen flex flex-col bg-gray-100">
+        <div class="flex justify-between items-center bg-blue-500 p-4">
+            <h1 class="text-white text-2xl">Student Portal</h1>
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="logout()">Logout</button>
+        </div>
+        <div class="p-4">
+            <h2 class="text-xl font-bold mb-4" id="courseTitle"></h2>
+            <div id="videoList" class="space-y-4">
+                <!-- Video items will be appended here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
