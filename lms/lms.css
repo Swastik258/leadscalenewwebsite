@@ -1,0 +1,42 @@
+body.black, #dashboardPage.black {
+    background-color: #000;
+    color: #fff;
+}
+
+body.black .bg-white, #dashboardPage.black .bg-white {
+    background-color: #333;
+    color: #fff;
+}
+
+body.black .bg-gray-200, #dashboardPage.black .bg-gray-200 {
+    background-color: #444;
+}
+
+body.black .bg-blue-500 {
+    background-color: #007bff;
+}
+
+body.black .text-blue-500 {
+    color: #1e90ff;
+}
+
+body.black .text-white {
+    color: #fff;
+}
+
+body.black .text-gray-700 {
+    color: #d1d5db;
+}
+
+body.black .shadow {
+    box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
+}
+
+body.black .hover\:bg-gray-900:hover {
+    background-color: #333;
+}
+
+#dashboardPage .bg-gray-200 {
+    width: 20%;
+    min-width: 200px;
+}

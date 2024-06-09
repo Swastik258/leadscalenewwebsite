@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic LMS</title>
+    <title>Enhanced LMS</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lms.css">
 </head>
-<body>
-    <div id="loginPage" class="h-screen flex items-center justify-center bg-gray-100">
+<body class="bg-gray-100">
+    <div id="loginPage" class="h-screen flex items-center justify-center">
         <div class="w-full max-w-md">
             <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="loginForm">
                 <h2 class="text-center text-2xl font-bold mb-4">Login</h2>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                        Username
-                    </label>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
                 </div>
                 <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                        Password
-                    </label>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">
                 </div>
                 <div class="mb-6">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="course">
-                        Course Name
-                    </label>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="course">Course Name</label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="course" type="text" placeholder="Course Name">
                 </div>
                 <div class="flex items-center justify-between">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="login()">
-                        Sign In
-                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="login()">Sign In</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <div id="dashboardPage" class="hidden h-screen flex flex-col bg-gray-100">
+    <div id="dashboardPage" class="hidden h-screen flex flex-col">
         <div class="flex justify-between items-center bg-blue-500 p-4">
             <h1 class="text-white text-2xl">Student Portal</h1>
-            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="logout()">Logout</button>
+            <div class="flex items-center space-x-4">
+                <button class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded" onclick="toggleTheme()">Toggle Theme</button>
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="logout()">Logout</button>
+            </div>
         </div>
-        <div class="p-4">
-            <h2 class="text-xl font-bold mb-4" id="courseTitle"></h2>
-            <div id="videoList" class="space-y-4">
-                <!-- Video items will be appended here -->
+        <div class="flex flex-grow">
+            <div class="w-1/5 bg-gray-200 p-4">
+                <h2 class="text-xl font-bold mb-4">Profile</h2>
+                <div id="profileInfo" class="mb-4"></div>
+                <h2 class="text-xl font-bold mb-4">Settings</h2>
+                <!-- Additional settings can be added here -->
+            </div>
+            <div class="w-4/5 bg-gray-100 p-4" id="dashboardContent">
+                <h2 class="text-xl font-bold mb-4" id="courseTitle"></h2>
+                <div id="videoList" class="space-y-4 mb-6">
+                    <!-- Video items will be appended here -->
+                </div>
+                <div id="assignments" class="mb-6">
+                    <h3 class="text-lg font-bold mb-2">Assignments</h3>
+                    <ul id="assignmentsList" class="list-disc list-inside"></ul>
+                </div>
+                <div id="announcements">
+                    <h3 class="text-lg font-bold mb-2">Announcements</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Announcement 1: Course starts on 15th June</li>
+                        <li>Announcement 2: Midterm exam on 30th June</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
