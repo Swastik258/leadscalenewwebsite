@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadscale - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles if needed */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-black p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Leadscale</a>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex space-x-4">
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">Courses</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">Skill Dev</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">Apply Now</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">Marketplace</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">About Us</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-500 transition">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="mobile-menu" class="md:hidden flex flex-col space-y-2 bg-black p-4 hidden">
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">Courses</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">Skill Dev</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">Apply Now</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">Marketplace</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">About Us</a></li>
+            <li><a href="#" class="text-white hover:text-yellow-500 transition">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">Welcome to Leadscale</h1>
+            <p class="text-xl mb-4">An AI-integrated Edtech startup empowering learners with innovative technology and finance solutions.</p>
+            <p class="text-xl">Revolutionizing the learning experience with cutting-edge resources and personalized support. Explore our platform today.</p>
+        </div>
+    </section>
+
+    <!-- About Us Heading -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-4">About Us</h2>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Mission</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-8">Join us on our journey to redefine education in the digital age. We invest in the world’s potential by providing cutting-edge courses in technology and finance, designed to empower your career growth. From programming fundamentals to advanced financial analysis, elevate your skills with us.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-blue-50 transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Unlimited Hackathons</h3>
+                    <p>Participate in unlimited hackathons and put your skills to the test in a competitive environment.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-green-50 transition">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Free Coding Bootcamp</h3>
+                    <p>Join our free coding bootcamp and master the fundamentals of programming with expert guidance.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-red-50 transition">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Support In Project</h3>
+                    <p>Receive dedicated support in your projects to ensure successful completion and learning.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-yellow-50 transition">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">AI Mentoring and Resume Review</h3>
+                    <p>Get AI-driven mentoring and resume reviews to enhance your career prospects.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:bg-purple-50 transition">
+                    <div class="text-purple-500 text-4xl mb-4">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Knowledge Management</h3>
+                    <p>Access our comprehensive knowledge management system to support your continuous learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">What We Offer</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg text-center hover:bg-gray-300 transition">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">AI-Driven Learning</h3>
+                        <p>Utilizing advanced AI algorithms to tailor learning experiences to individual needs and preferences.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg text-center hover:bg-gray-300 transition">
+                        <div class="text-green-500 text-4xl mb-4">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Innovative Technology</h3>
+                        <p>Providing cutting-edge technology to enhance the learning process and deliver a seamless educational experience.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-gray-200 p-6 rounded-lg shadow-lg text-center hover:bg-gray-300 transition">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Finance Solutions</h3>
+                        <p>Offering flexible finance solutions to make education accessible and affordable for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">A Few Facts About Leadscale</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-blue-50 transition">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">5000+ Students</h3>
+                    <p>Trusted by over 5000 students around the world.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-green-50 transition">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">24/7 Support</h3>
+                    <p>24/7 live support to assist you anytime, anywhere.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-red-50 transition">
+                    <div class="text-red-500 text-4xl mb-4">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">10+ Mentors</h3>
+                    <p>Top-notch mentors providing industry-focused education.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-yellow-50 transition">
+                    <div class="text-yellow-500 text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">99.99% Uptime</h3>
+                    <p>Ensuring reliable and consistent access to our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto mb-8">Have questions or need support? Our team is here to help you. Reach out to us anytime and we'll respond as soon as possible.</p>
+            <div class="flex justify-center">
+                <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-lg font-bold hover:bg-blue-700 transition">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 text-white text-center">
+        <p>&copy; 2024 Leadscale. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
