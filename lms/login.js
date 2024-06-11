@@ -1,5 +1,5 @@
 const users = [
-    { username: 'student1', password: 'password1', name: 'John Doe', email: 'john@example.com', courses: ['Math', 'Science'] },
+    { username: 'student1', password: 'password1', name: 'John Doe', email: 'john@example.com', courses: ['Python and Data Science', 'Python'] },
     { username: 'student2', password: 'password2', name: 'Jane Smith', email: 'jane@example.com', courses: ['History', 'Art'] }
 ];
 

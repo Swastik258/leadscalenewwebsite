@@ -48,19 +48,46 @@
             </div>
             <div class="w-4/5 bg-gray-100 p-4" id="dashboardContent">
                 <h2 class="text-xl font-bold mb-4" id="courseTitle"></h2>
-                <div id="videoList" class="space-y-4 mb-6">
+                <div id="progressContainer" class="mb-6">
+                    <div id="progressBar" class="bg-gray-200 w-full h-6 rounded-full overflow-hidden">
+                        <div class="bg-blue-500 h-full text-center text-white"></div>
+                    </div>
+                </div>
+                <div id="videoList" class="grid grid-cols-3 gap-4 mb-6">
                     <!-- Video items will be appended here -->
                 </div>
                 <div id="assignments" class="mb-6">
                     <h3 class="text-lg font-bold mb-2">Assignments</h3>
                     <ul id="assignmentsList" class="list-disc list-inside"></ul>
                 </div>
-                <div id="announcements">
+                <div id="announcements" class="mb-6">
                     <h3 class="text-lg font-bold mb-2">Announcements</h3>
                     <ul class="list-disc list-inside">
                         <li>Announcement 1: Course starts on 15th June</li>
                         <li>Announcement 2: Midterm exam on 30th June</li>
                     </ul>
+                </div>
+                <div id="discussions" class="mb-6">
+                    <h3 class="text-lg font-bold mb-2">Discussions</h3>
+                    <div id="discussionList" class="space-y-4">
+                        <!-- Discussion comments will be appended here -->
+                    </div>
+                    <div class="mt-4">
+                        <textarea id="newComment" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" placeholder="Add a comment"></textarea>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="addComment()">Add Comment</button>
+                    </div>
+                </div>
+                <div id="todo" class="mb-6">
+                    <h3 class="text-lg font-bold mb-2">To-Do List</h3>
+                    <ul id="todoList" class="list-disc list-inside mb-2"></ul>
+                    <div class="mt-4">
+                        <input id="newTask" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" type="text" placeholder="New task">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="addTask()">Add Task</button>
+                    </div>
+                </div>
+                <div id="events" class="mb-6">
+                    <h3 class="text-lg font-bold mb-2">Upcoming Events</h3>
+                    <ul id="eventsList" class="list-disc list-inside"></ul>
                 </div>
             </div>
         </div>

@@ -28,17 +28,33 @@ function showDashboard() {
     `;
 
     const courseContent = {
-        'Math': {
+        'Python and Data Science': {
             videos: [
                 { title: 'Lesson 1', url: 'https://youtu.be/aVYqnRHgXLI' },
-                { title: 'Lesson 2', url: 'https://example.com/video2' }
+                { title: 'Lesson 2', url: 'https://youtu.be/iTE-0mqfh2E' },
+                { title: 'Lesson 3', url: 'https://youtu.be/ih-97r6XxpY' },
+                { title: 'Lesson 4', url: 'https://youtu.be/r8J8wZ4Yw5I' },
+                { title: 'Lesson 5', url: 'https://youtu.be/j9YvIOvkZpw' },
+                { title: 'Lesson 6', url: 'https://youtu.be/oojcHPaaUjQ' },
+                { title: 'Lesson 7', url: 'https://youtu.be/4V-x1J5YYOs' },
+                { title: 'Lesson 8', url: 'https://youtu.be/ZjEewLQzkak' },
+                { title: 'Lesson 9', url: 'https://youtu.be/PMwjjLsZi5c' },
+                { title: 'Lesson 10', url: 'https://youtu.be/WU73pRLRbZk' },
+                { title: 'Lesson 11', url: 'https://youtu.be/hrRIUdDASD4' },
+                { title: 'Lesson 12', url: 'https://youtu.be/ni8fuHrlaNk' },
+                { title: 'Lesson 13', url: 'https://youtu.be/i3CtICuxb_M' },
+                { title: 'Lesson 14', url: 'https://youtu.be/ikrpZP4b9Y0' },
+                { title: 'Lesson 15', url: 'https://youtu.be/vT1KiuMBF_0' },
+                { title: 'Lesson 16', url: 'https://youtu.be/7iYaW5-ZX1Y' },
+               
+
             ],
             assignments: [
                 { title: 'Assignment 1', url: 'https://example.com/math1' },
                 { title: 'Assignment 2', url: 'https://example.com/math2' }
             ]
         },
-        'Science': {
+        'Python': {
             videos: [
                 { title: 'Lesson 1', url: 'https://example.com/science1' },
                 { title: 'Lesson 2', url: 'https://example.com/science2' }
