@@ -1,6 +1,7 @@
 const users = [
-    { username: 'student1', password: 'password1', name: 'John Doe', email: 'john@example.com', courses: ['Python and Data Science', 'Python'] },
-    { username: 'student2', password: 'password2', name: 'Jane Smith', email: 'jane@example.com', courses: ['History', 'Art'] }
+    { username: 'sohamsawalakhe@gmail.com', password: '7558496659', name: 'Soham Manish Sawalakhe', email: 'sohamsawalakhe@gmail.com', courses: ['PYAIDS', 'Python'] },
+    { username: 'kanishklaptop1@gmail.com', password: '8855055725', name: 'Kanishk Butle ', email: 'kanishklaptop1@gmail.com', courses: ['PYAIDS', 'Python'] },
+
 ];
 
 function login() {

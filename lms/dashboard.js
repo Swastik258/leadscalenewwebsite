@@ -28,7 +28,7 @@ function showDashboard() {
     `;
 
     const courseContent = {
-        'Python and Data Science': {
+        'PYAIDS': {
             videos: [
                 { title: 'Lesson 1', url: 'https://youtu.be/aVYqnRHgXLI' },
                 { title: 'Lesson 2', url: 'https://youtu.be/iTE-0mqfh2E' },
