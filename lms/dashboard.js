@@ -50,7 +50,7 @@ function showDashboard() {
 
             ],
             assignments: [
-                { title: 'Assignment 1', url: 'https://example.com/math1' },
+                { title: 'Assignment 1', url: 'https://docs.google.com/document/d/1IruEvCsOJKDHQ5BM1Vgy5fEEtoQctmZshnbs7XwanNY/edit?usp=sharing' },
                 { title: 'Assignment 2', url: 'https://example.com/math2' }
             ]
         },
