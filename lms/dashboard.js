@@ -64,7 +64,7 @@ function showDashboard() {
                 { title: 'Assignment 2', url: 'https://example.com/science2' }
             ]
         },
-        'History': {
+        'BA': {
             videos: [
                 { title: 'Lesson 1', url: 'https://example.com/history1' },
                 { title: 'Lesson 2', url: 'https://example.com/history2' }

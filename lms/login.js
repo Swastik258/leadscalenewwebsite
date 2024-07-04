@@ -9,6 +9,7 @@ const users = [
     { username: 'hk.sneha27@gmail.com', password: '7303054993', name: 'sneha', email: 'hk.sneha27@gmail.com', courses: ['PYAIDS', 'Python'] },
     { username: 'aadhithsekar@gmail.com', password: '9360650158', name: 'Adith.S', email: 'aadhithsekar@gmail.com', courses: ['PYAIDS', 'Python'] },
     { username: 'umesh_kumar.ug22@nsut.ac.in', password: '7340423590', name: 'UMESH KUMAR', email: 'umesh_kumar.ug22@nsut.ac.in', courses: ['PYAIDS', 'Python'] },
+    { username: 'rohanrockstar97.rb@gmail.com', password: '8999971936', name: 'Rohan Bambolkar', email: 'rohanrockstar97.rb@gmail.com', courses: ['BA', 'Business Analyst'] },
 
 
 ];
