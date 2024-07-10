@@ -66,8 +66,8 @@ function showDashboard() {
         },
         'BA': {
             videos: [
-                { title: 'Lesson 1', url: 'https://example.com/history1' },
-                { title: 'Lesson 2', url: 'https://example.com/history2' }
+                { title: 'Lesson 1', url: 'https://youtu.be/Xx3aFZOPPIQ' },
+                { title: 'Lesson 2', url: 'https://youtu.be/VqbcyhHBMOk' }
             ],
             assignments: [
                 { title: 'Assignment 1', url: 'https://example.com/history1' },
