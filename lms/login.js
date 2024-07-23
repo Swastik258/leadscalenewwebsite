@@ -11,6 +11,7 @@ const users = [
     { username: 'umesh_kumar.ug22@nsut.ac.in', password: '7340423590', name: 'UMESH KUMAR', email: 'umesh_kumar.ug22@nsut.ac.in', courses: ['PYAIDS', 'Python'] },
     { username: 'rohanrockstar97.rb@gmail.com', password: '8999971936', name: 'Rohan Bambolkar', email: 'rohanrockstar97.rb@gmail.com', courses: ['BA', 'Business Analyst'] },
     { username: 'himanshusah1211@gmail.com', password: '9910986719', name: 'Himanshu Sah', email: 'himanshusah1211@gmail.com', courses: ['PYAIDS', 'Python'] },
+    { username: 'rishi44shah@gmail.com', password: '9339436955', name: 'Rishi', email: 'rishi44shah@gmail.com', courses: ['BA', 'Business Analyst'] },
 
 
 ];
